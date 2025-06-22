@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qur'an Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/6c78cdcb67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="quran-player">
+      <nav>
+        <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="circle"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+
+      <img src="assets/quran.png" class="quran-img" alt="Qur'an Image">
+
+      <h2 id="surahTitle">Surah</h2>
+      <p>Alafasy</p>
+
+      <audio id="audio" controls></audio>
+
+      <div class="controls">
+        <div class="circle" onclick="prevSurah()">
+          <i class="fa-solid fa-backward"></i>
+        </div>
+        <div class="circle" onclick="togglePlay()">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="circle" onclick="nextSurah()">
+          <i class="fa-solid fa-forward"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
