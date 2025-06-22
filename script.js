@@ -27,12 +27,19 @@
     }
 
     function togglePlay() {
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
-    }
+  const icon = document.querySelector('.fa-play, .fa-pause');
+
+  if (audio.paused) {
+    audio.play();
+    icon.classList.remove('fa-play');
+    icon.classList.add('fa-pause');
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-pause');
+    icon.classList.add('fa-play');
+  }
+}
+
 
     // Initial load
     updateAudio();
